@@ -23,16 +23,11 @@
 <br>
 <br>
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=cr7&show_icons=true&locale=en&layout=compact" alt="cr7" /></p>
-<br>
-<br>
-<br>
+
+
 <img  align="right" width="400" src="readme2.gif" alt="coading">
-<br>
-<br>
+
 <p>&nbsp;<img align="left" src="https://github-readme-stats.vercel.app/api?username=cr7&show_icons=true&locale=en" alt="cr7" /></p>
-<br>
-<br>
+
 <img  align="right" width="400" src="readme3.gif" alt="coading">
-<br>
-<br>
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=cr7&" alt="cr7" /></p>
