@@ -2,7 +2,7 @@
 <br>
 <h2 align="center">I am student of computer engineering</h2>
 <br>
-<img  align="right" width="400" src="readme1.gif" alt="coading">
+<img  align="right" width="400" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Frudrabarad%2FGifs&psig=AOvVaw1Ea2MWYhjXFlib0VnBmCuF&ust=1674966831404000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJjU1um36fwCFQAAAAAdAAAAABAE" alt="coading">
 <br>
 - 🌱 I’m currently learning **python**
 <br>
