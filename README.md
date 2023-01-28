@@ -1,18 +1,23 @@
-
+<hr>
+<center>
+<img src="https://api.logo.com/api/v2/images?logo=logo_557fb37e-3864-4909-b5d1-358511d34602&format=webp&margins=0&quality=60&width=500&background=transparent&u=1674895581" alt="not found" height="200" width="800">
+</center>
+<br>
+<br>
+<hr>
 <img src="https://camo.githubusercontent.com/61491d59e71fec5c794945fed916a4a682b6c0404fc31f30b08a0d919c558404/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303631313632342d5445363451474b524a4738535741495553374e532f6b6531375a77644742546f6464493870446d34386b506f73776c7a6a53564d4d2d53784f703743563539425a772d7a505067646e346a557756634a45315a7657515578776b6d794578676c4e714770304976544a5a616d574c49327a76595748384b332d735f3479737a63703272795449304871544f6161556f68724938504936465879386339505774426c7141566c555335697a7064634958445a71445976707252715a32395077306f2f636f64696e672d667265616b2e676966" alt="image not found" align="left" height="300" width="200">
 
 <center>
-<h1 align="center">Hi 👋, I'm Rupak Rarajuli</h1><br>
-
+<h1 align="center">Hi 👋, I'm Rupak Rarajuli</h1>
+  <br>
 <h2 align="center">I am student of computer engineering</h2><br>
 </center>
 <br>
 <br>
 <hr>
 <center>
-<h3 align="left">     -🌱 I’m currently learning **python**</h3>
-
-
+<h3 align="left"-🌱 I’m currently learning **python**</h3>
+  <br>
 <h3 anign="left">-💬 Ask me about **python**</h3>
 
 <img src="https://media.tenor.com/qJ5evVs-_uUAAAAC/coding.gif" alt="image not found" align="right" height="300" width="200">
@@ -31,7 +36,6 @@
 <a href="https://linkedin.com/in/rupak parajuli" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rupak parajuli" height="30" width="40" /></a>
 <a href="https://fb.com/rupak parajuli" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="rupak parajuli" height="30" width="40" /></a>
 <a href="https://www.youtube.com/c/@rupakparajuli7537" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@rupakparajuli7537" height="30" width="40" /></a>
-<a href="https://www.gmail.com/c/parajulirupak42@gmail.com" target="blank"><img align="center" src="![image](https://user-images.githubusercontent.com/110843279/215257739-7bffbebe-686f-4974-b67c-d78324e23522.png)" alt="not found" height="30" width="40" /></a>
 
 </p>
 <br>
@@ -51,7 +55,7 @@
 
 <hr>
 <center>
-<p><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs?username=cr7&show_icons=true&locale=en&layout=compact" alt="cr7" /></p>
+    <p><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs?username=cr7&show_icons=true&locale=en&layout=compact" alt="cr7" /></p>
 </center>
 <br>
 <br>
@@ -72,4 +76,5 @@
 
 <br>
 <hr>
+
 
