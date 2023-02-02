@@ -1,18 +1,3 @@
-<h1 align="center">Hi 👋, I'm Rupak Rarajuli</h1>
-<h3 align="center">I am student of computer engineering</h3>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=cr7&label=Profile%20views&color=0e75b6&style=flat" alt="cr7" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=cr7" alt="cr7" /></a> </p>
-
-<p align="left"> <a href="https://twitter.com/rupak parajuli" target="blank"><img src="https://img.shields.io/twitter/follow/rupak parajuli?logo=twitter&style=for-the-badge" alt="rupak parajuli" /></a> </p>
-
-- 🌱 I’m currently learning **python**
-
-- 💬 Ask me about **python**
-
-- 📫 How to reach me **parajulirupak42@gmail.com**
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/rupak parajuli" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rupak parajuli" height="30" width="40" /></a>
