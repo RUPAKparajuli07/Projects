@@ -7,6 +7,7 @@ responses = {
     "bye": ["Goodbye!", "See you later!"],
     "what is your name": ["My name is Rupak Parajuli"],
     "which is the best programming language for basic":["Python is the best programming language for basic"]
+    "who are you":["i am ai"]
 }
 
 # Define a function to handle the chatbot's response
