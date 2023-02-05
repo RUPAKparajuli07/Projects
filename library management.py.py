@@ -46,8 +46,8 @@ class Library:
         return None
 
 library = Library()
-book1 = Book("Pride and Prejudice", "Jane Austen", "123456")
-book2 = Book("To Kill a Mockingbird", "Harper Lee", "234567")
+book1 = Book("Pride and Prejudice", "Jane Austen", "1000")
+book2 = Book("To Kill a Mockingbird", "Harper Lee", "1000")
 library.add_book(book1)
 library.add_book(book2)
 
