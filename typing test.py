@@ -14,8 +14,8 @@ def typing_game():
   print("Type the following word as fast as you can: ")
   print(word)  
   
-  time_limit = 40 # time
-  word_factor = word_count // 500
+  time_limit = 60 # time
+  word_factor = word_count // 80
   time_limit = time_limit + (20 * (word_factor + random.choice([-1, 1])))
   time_limit = max(time_limit, 60)
   
