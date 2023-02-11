@@ -48,7 +48,7 @@
 
 <hr>
 <center>
-    <p><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs?username=cr7&show_icons=true&locale=en&layout=compact" alt="cr7" /></p>
+    <p><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs?username=RUPAKparajuli07&show_icons=true&locale=en&layout=compact" alt="cr7" /></p>
 </center>
 <br>
 <br>
@@ -56,14 +56,14 @@
 <br>
 <br>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=cr7&show_icons=true&locale=en" alt="cr7" /> <img src="https://media.tenor.com/5ry-200hErMAAAAd/hacker-hacker-man.gif" alt="image not found" align="right" height="300" width="300"></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=RUPAKparajuli07&show_icons=true&locale=en" alt="cr7" /> <img src="https://media.tenor.com/5ry-200hErMAAAAd/hacker-hacker-man.gif" alt="image not found" align="right" height="300" width="300"></p>
 <br>
 <br>
 <hr>
 <br>
 
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=cr7&" alt="cr7"  /> 
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=RUPAKparajuli07&" alt="cr7"  /> 
 </p>
 <br>
 
