@@ -1,31 +1,75 @@
-import random
-responses = {
-    "hi": ["Hello!", "Hi there!"],
-    "how are you": ["I'm good, thanks for asking.", "I'm doing well, how about you?"],
-    "bye": ["Goodbye!", "See you later!"],
-    "what is your name": ["My name is Rupak Parajuli"],
-    "which is the best programming language for basic":["Python is the best programming language for basic"]
-    "who are you":["i am ai"]
-}
+#
+# first install this on your computer
+# 
+# from nltk.chat.util import Chat, reflections
 
 
-#you can add more question if you want
 
-
-def chatbot_response(user_input):
-   
-    if user_input in responses:
-  
-        return random.choice(responses[user_input])
-    else:
+#Pairs is a list of patterns and responses.
+Chats = [
+    [
+        r"(.*)my name is (.*)",
+        ["Hello %2, How are you today ?",]
+    ],
+    [
+        r"(.*)help(.*) ",
+        ["I can help you ",]
+    ],
+     [
+        r"(.*) your name ?",
+        ["My name is thecleverprogrammer, but you can just call me robot and I'm a chatbot .",]
+    ],
+    [
+        r"how are you (.*) ?",
+        ["I'm doing very well", "i am great !"]
+    ],
+    [
+        r"sorry (.*)",
+        ["Its alright","Its OK, never mind that",]
+    ],
+    [
+        r"i'm (.*) (good|well|okay|ok)",
+        ["Nice to hear that","Alright, great !",]
+    ],
+    [
+        r"(hi|hey|hello|hola|holla)(.*)",
+        ["Hello", "Hey there",]
+    ],
+    [
+        r"what (.*) want ?",
+        ["Make me an offer I can't refuse",]
         
-        return "I'm sorry, I don't understand what you're saying."
-
-
-while True:
-    user_input = input("You: ")
-    if user_input.lower() == "bye":
-        print(chatbot_response(user_input))
-        break
-    else:
-        print("Chatbot: ", chatbot_response(user_input))
+    ],
+    [
+        r"(.*)created(.*)",
+        ["Mr rupak created me using Python's NLTK library ","top secret ;)",]
+    ],
+    [
+        r"(.*) (location|city) ?",
+        ['Budhanilkantha-2 Bhangal Kathmandu Nepal',]
+    ],
+    [
+        r"(.*)raining in (.*)",
+        ["No rain in the past 4 days here in %2","In %2 there is a 50% chance of rain",]
+    ],
+    [
+        r"how (.*) health (.*)",
+        ["Health is very important, but I am a computer, so I don't need to worry about my health ",]
+    ],
+    [
+        r"(.*)(sports|game|sport)(.*)",
+        ["I'm a very big fan of Football",]
+    ],
+    [
+        r"who (.*) (Footballer|Player)?",
+        ["Cristiano Ronaldo"]
+    ],
+    [
+        r"quit",
+        ["Bye for now. See you soon :) ","It was nice talking to you. See you soon :)"]
+    ],
+    [
+        r"(.*)",
+        ['That is nice to hear']
+    ],
+]
