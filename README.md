@@ -66,8 +66,6 @@
 <hr>
 <centre>
 
-<H2>Thank you for visiting</H
-
 
 
 
