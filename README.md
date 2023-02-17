@@ -64,7 +64,10 @@
 <br>
 <br>
 <hr>
+<centre>
+
 <H2>Thank you for visiting</H2>
+</centre>
 <hr>
 
 
