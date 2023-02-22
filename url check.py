@@ -27,6 +27,11 @@ def is_link_safe(url):
         # Return False if an exception occurred during the request
         return False, domain_name
 
+# Print header
+print("***************************")
+print(" URL Safety Checker v1.0 ")
+print("***************************\n")
+
 # Ask for permission to check the URLs
 permission = input("Do you want to check the URLs? (yes/no): ")
 
@@ -40,8 +45,7 @@ if permission.lower() == "yes":
         is_safe, domain = is_link_safe(url)
 
         # Display the results
-        print("Link Check Results:")
-        print("-------------------")
+        print("***************************")
         print(f"URL: {url}")
         print(f"Domain: {domain}")
 
