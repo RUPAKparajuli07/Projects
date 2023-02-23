@@ -37,9 +37,6 @@ add_book("1984" , "George Orwell" ,1000)
 
 conn.close()
 
-
-
-
 ########################--------------this is the process of connect with database----------------------###################
 
 # In this example, a SQLite database named bookstore.db is created (or opened if it already exists). A books table is 
