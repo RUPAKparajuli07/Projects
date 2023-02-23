@@ -32,9 +32,6 @@ add_book("Pride and Prejudice", "Jane Austen", 4000)
 add_book("The Diary of a Young Girl" , "Anne Frank" , 3000)
 add_book("To Kill a Mockingbird" , "Harper Lee" , 2000)
 add_book("1984" , "George Orwell" ,1000)
-
-
-
 conn.close()
 
 ########################--------------this is the process of connect with database----------------------###################
