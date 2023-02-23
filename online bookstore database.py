@@ -27,7 +27,6 @@ def add_book(title, author, price):
 # this is book list abd you can add more book list
 #add_book("book name" , "author" "price")
 
-
 add_book("The Great Gatsby", "F. Scott Fitzgerald", 5000)
 add_book("Pride and Prejudice", "Jane Austen", 4000)
 add_book("The Diary of a Young Girl" , "Anne Frank" , 3000)
