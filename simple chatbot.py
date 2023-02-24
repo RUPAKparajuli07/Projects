@@ -3,7 +3,7 @@ from nltk.chat.util import Chat, reflections
 from colorama import Fore, Style
 
 # define chat pairs
-pairs = [
+Questions = [
     [
         r"(.*)my name is (.*)",
         ["Hello %2, How are you today ?",]
@@ -72,7 +72,7 @@ pairs = [
 ]
 
 # create Chat object
-chatbot = Chat(pairs, reflections)
+chatbot = Chat(Questions, reflections)
 
 # define function to start chat
 def start_chat():
@@ -89,6 +89,10 @@ def start_chat():
             break
         response = chatbot.respond(user_input)
         print(Fore.RED + "Bot: " + Style.RESET_ALL + response)
+        
+    else:
+        print(Fore.RED + "Bot: I'm sorry, I don't understand. Can you please ask a different question?" + Style.RESET_ALL)
+
 
 # start chat
 if __name__ == '__main__':
