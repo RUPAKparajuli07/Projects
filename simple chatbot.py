@@ -10,14 +10,14 @@ pairs = [
     ],
     [
         r"(.*)help(.*) ",
-        ["I can help you ",]
+        ["How  can I help you ",]
     ],
      [
         r"(.*) your name ?",
         ["My name is thecleverprogrammer, but you can just call me robot and I'm a chatbot .",]
     ],
     [
-        r"how are you(.*)",
+        r"how are you (.*) ?",
         ["I'm doing very well", "i am great !"]
     ],
     [
@@ -25,7 +25,7 @@ pairs = [
         ["Its alright","Its OK, never mind that",]
     ],
     [
-        r"i am (.*) (good|well|okay|ok)",
+        r"i'm (.*) (good|well|okay|ok)",
         ["Nice to hear that","Alright, great !",]
     ],
     [ 
@@ -77,6 +77,7 @@ chatbot = Chat(pairs, reflections)
 # define function to start chat
 def start_chat():
     print(Fore.RED + "Hi, I'm a chatbot. What can I do for you today?" + Style.RESET_ALL)
+    print(Fore.RED + "What is your name?" + Style.RESET_ALL)
     while True:
         try:
             user_input = input(Fore.BLUE + "You: " + Style.RESET_ALL)
