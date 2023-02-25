@@ -1,7 +1,7 @@
 import requests
 import geopy.geocoders
 
-#######################------------------------you can add the api key hear , without api key you cannot access this-------------------###########
+#######################------------------------you can add the api key hear , without api key you cannot access this-------------------############
 
 API_KEY = "your_api_key_here"
 GEOLOCATOR = geopy.geocoders.Nominatim(user_agent="geoapiExercises")
