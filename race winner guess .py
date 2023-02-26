@@ -18,4 +18,3 @@ else:
         print("Congratulations! Your car " + user_car + " has won the race.")
     else:
         print("Sorry, your car " + user_car + " has lost the race. The winner is " + winner)
-
