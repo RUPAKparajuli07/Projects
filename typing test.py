@@ -67,3 +67,4 @@ while True:
   if play_again.lower() == 'no':
     break
 print("Thank you for playing!")
+
