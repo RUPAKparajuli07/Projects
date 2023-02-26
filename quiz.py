@@ -3,9 +3,6 @@ def give_options(x,y,z):
     print("b):", y)
     print("c):", z)
     
-    
-    
-    
 print("Hello! Welcome to my Quiz" "\n" "All Questions carries 10 marks each")
 ans = input("Are you ready to play (yes/no): ")
 a ="Note: wrtie answers! do not write option."
