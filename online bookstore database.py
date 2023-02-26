@@ -39,3 +39,4 @@ conn.close()
 # In this example, a SQLite database named bookstore.db is created (or opened if it already exists). A books table is 
 # created within the database to store information about each book, including its title, author, and price. The add_book 
 # function can be used to add new books to the database.
+
