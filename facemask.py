@@ -48,3 +48,4 @@ while True:
         break
 webcam.release()
 cv2.destroyAllWindows()
+
