@@ -1,8 +1,4 @@
 
-
-###################--------------used replit for best experience---------------------------###################A
-
-
 import random
 import os
 
