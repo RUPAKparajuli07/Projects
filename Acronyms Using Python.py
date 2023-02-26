@@ -35,6 +35,7 @@ class FirstLetterCapitalizer:
     def process_input(self):
         input_string = self.entry.get()
 
+        
         if not input_string:
             self.result_label.config(text="Please enter a phrase.", fg=self.result_fg)
             return
