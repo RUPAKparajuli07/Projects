@@ -6,3 +6,4 @@ def generate_password(length):
     return password
 password = generate_password(12)
 print(password)
+
