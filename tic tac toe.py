@@ -63,3 +63,4 @@ elif check_win("O"):
   print(" X loose \_/ ")
 else:
   print("It's a draw!")
+  
