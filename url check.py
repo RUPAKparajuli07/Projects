@@ -1,6 +1,6 @@
+import tkinter as tk
 import requests
 import tldextract
-import tkinter as tk
 
 def is_link_safe(url):
     try:
@@ -28,40 +28,61 @@ def is_link_safe(url):
         # Return False if an exception occurred during the request
         return False, domain_name
 
-def check_urls():
-    urls = url_entry.get("1.0", tk.END).strip().split("\n")
-    results.delete("1.0", tk.END)
-    
-    for url in urls:
-        is_safe, domain = is_link_safe(url)
-        
-        results.insert(tk.END, "URL: {}\n".format(url))
-        results.insert(tk.END, "Domain: {}\n".format(domain))
-        
-        if is_safe:
-            results.insert(tk.END, "Status: Safe\n\n")
-        else:
-            results.insert(tk.END, "Status: NOT Safe\n\n")
 
-# Create the GUI
+def check_urls():
+    # Clear the results text box
+    results_text.delete('1.0', tk.END)
+
+    # Get the URLs from the input text box
+    urls = input_text.get('1.0', tk.END).strip().split("\n")
+
+    # Loop through the URLs
+    for url in urls:
+        # Check the URL
+        is_safe, domain = is_link_safe(url)
+
+        # Display the results
+        results_text.insert(tk.END, "***************************\n")
+        results_text.insert(tk.END, f"URL: {url}\n")
+        results_text.insert(tk.END, f"Domain: {domain}\n")
+
+        if is_safe:
+            results_text.insert(tk.END, "Status: Safe\n", "safe")
+        else:
+            results_text.insert(tk.END, "Status: NOT Safe\n", "unsafe")
+        results_text.insert(tk.END, "\n")
+
+    # Set the focus back to the input text box
+    input_text.focus_set()
+
+
+# Create the main window
 root = tk.Tk()
 root.title("URL Safety Checker")
 
 # Create the input label and text box
-url_label = tk.Label(root, text="Enter URLs to check (one per line):")
-url_label.pack(side=tk.TOP, pady=(10, 5))
-url_entry = tk.Text(root, height=10, width=50)
-url_entry.pack(side=tk.TOP, pady=(0, 10))
+input_label = tk.Label(root, text="Enter the URLs to check, separated by a new line:")
+input_label.pack()
+input_text = tk.Text(root, height=10, width=50)
+input_text.pack()
+
+# Bind the paste action to the Ctrl+V shortcut
+input_text.bind("<Control-v>", lambda event: input_text.insert(tk.INSERT, root.clipboard_get()))
 
 # Create the check button
 check_button = tk.Button(root, text="Check URLs", command=check_urls)
-check_button.pack(side=tk.TOP, pady=(0, 10))
+check_button.pack()
 
 # Create the results label and text box
 results_label = tk.Label(root, text="Results:")
-results_label.pack(side=tk.TOP, pady=(10, 5))
-results = tk.Text(root, height=10, width=50)
-results.pack(side=tk.TOP)
+results_label.pack()
+results_text = tk.Text(root, height=10, width=50)
+results_text.tag_configure("safe", foreground="green")
+results_text.tag_configure("unsafe", foreground="red")
+results_text.pack()
 
-# Start the GUI
+# Set the focus to the input text box
+input_text.focus_set()
+
+# Run the main loop
 root.mainloop()
