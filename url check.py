@@ -1,5 +1,6 @@
 import requests
 import tldextract
+import tkinter as tk
 
 def is_link_safe(url):
     try:
@@ -27,33 +28,40 @@ def is_link_safe(url):
         # Return False if an exception occurred during the request
         return False, domain_name
 
-# Print header
-print("***************************")
-print(" URL Safety Checker v1.0 ")
-print("***************************\n")
-
-# Ask for permission to check the URLs
-permission = input("Do you want to check the URLs? (yes/no): ")
-
-if permission.lower() == "yes":
-    # Ask the user for the URLs
-    urls = input("Enter the URLs to check, separated by a new line: ").strip().split("\n")
-
-    # Loop through the URLs
-    for url in urls:
-        # Check the URL
-        is_safe, domain = is_link_safe(url)
-
-        # Display the results
-        print("***************************")
-        print(f"URL: {url}")
-        print(f"Domain: {domain}")
-
-        if is_safe:
-            print("Status: Safe")
-        else:
-            print("Status: NOT Safe")
-        print("")
-else:
-    print("No URLs were checked.")
+def check_urls():
+    urls = url_entry.get("1.0", tk.END).strip().split("\n")
+    results.delete("1.0", tk.END)
     
+    for url in urls:
+        is_safe, domain = is_link_safe(url)
+        
+        results.insert(tk.END, "URL: {}\n".format(url))
+        results.insert(tk.END, "Domain: {}\n".format(domain))
+        
+        if is_safe:
+            results.insert(tk.END, "Status: Safe\n\n")
+        else:
+            results.insert(tk.END, "Status: NOT Safe\n\n")
+
+# Create the GUI
+root = tk.Tk()
+root.title("URL Safety Checker")
+
+# Create the input label and text box
+url_label = tk.Label(root, text="Enter URLs to check (one per line):")
+url_label.pack(side=tk.TOP, pady=(10, 5))
+url_entry = tk.Text(root, height=10, width=50)
+url_entry.pack(side=tk.TOP, pady=(0, 10))
+
+# Create the check button
+check_button = tk.Button(root, text="Check URLs", command=check_urls)
+check_button.pack(side=tk.TOP, pady=(0, 10))
+
+# Create the results label and text box
+results_label = tk.Label(root, text="Results:")
+results_label.pack(side=tk.TOP, pady=(10, 5))
+results = tk.Text(root, height=10, width=50)
+results.pack(side=tk.TOP)
+
+# Start the GUI
+root.mainloop()
