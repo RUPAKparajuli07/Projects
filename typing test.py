@@ -1,10 +1,15 @@
-import time
+import tkinter as tk
 import random
-
-
-def typing_game():
-  words = [
-    "Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California. Together they own about 14% of its publicly listed shares and control 56% of its stockholder voting power through super-voting stock.",
+import time
+class TypingTest:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Typing Test")
+        self.master.geometry("500x400")
+        self.master.resizable(True, True)
+        # Define the text options
+        self.text_options = [
+           "Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California. Together they own about 14% of its publicly listed shares and control 56% of its stockholder voting power through super-voting stock.",
     
     "Its most common use so far is creating ChatGPT - a highly capable chatbot. To give you a little taste of its most basic ability, we asked GPT-3's chatbot to write its own description as you can see above. It’s a little bit boastful, but completely accurate and arguably very well written.",
     
@@ -27,44 +32,87 @@ def typing_game():
 "श्री ५ बडामहाराजाधिराज पृथ्वीनारायण शाह (वि.सं.१७७९-१८३१) शाहवंशीय राजा थिए। स-साना राज्यहरूमा बाँडिएका बाईसे तथा चौबिसे राज्यहरूलाई एकत्रित गरी एउटै देशको सृजना गर्ने यिनी आधुनिक नेपालको राष्ट्रनिर्माताको रूपमा चिनिन्छन्। उनको सम्झनामा पुष २७ गते नेपालमा राष्ट्रिय एकता दिवस मनाउने गरिन्छ। नेपालमा २००७ सम्म राणा शासन थियो भने सात सालको क्रान्ति पश्चात् नेपालमा आएको प्रजातन्त्र पश्चात् योगी नरहरीनाथले नेपालमा राष्ट्रपिता पृथ्वीनारायण शाहको जन्मोत्सव मनाउनु पर्छ भनेर प्रक्रिया सुरु गरेका थिए।",
 
 "अभिलेखहरूमा गोपालहरू र महिषपालहरू काठमाडौं उपत्यकाको दक्षिण-पश्चिम कुनामा मातातीर्थमा राजधानी भएको प्रारम्भिक शासकहरू मानिन्छन्। सातौं वा आठौं शताब्दी ईसापूर्वदेखि किराँतीहरूले उपत्यकामा शासन गरेको भनिन्छ। तिनीहरूका प्रसिद्ध राजा यलुम्बरको पनि महाकाव्य ‘महाभारत’ मा उल्लेख छ। लगभग 300 ईस्वीमा लिच्छवीहरू उत्तरी भारतबाट आए र किराँतीहरूलाई पराजित गरे। लिच्छविहरूको विरासत मध्ये एक हो भक्तपुर नजिकै रहेको चाँगु नारायण मन्दिर, युनेस्कोको विश्व सम्पदा (संस्कृति) 5 औं शताब्दीको हो। सातौं शताब्दीको प्रारम्भमा, प्रथम ठकुरी राजा अम्शुवर्माले आफ्नो ससुरा लिच्छवीबाट राजगद्दी सम्हालेका थिए। उनले आफ्नी छोरी भृकुटीको विवाह प्रख्यात तिब्बती राजा सोङ त्सेन गाम्पोसँग गरे जसले गर्दा तिब्बतसँग राम्रो सम्बन्ध स्थापित भयो। लिच्छविहरूले उपत्यकामा कला र वास्तुकला ल्याए तर सृजनात्मकताको स्वर्ण युग १२०० ईस्वीमा मल्लहरूसँग आयो।"    
-  ]
-  
-  word = random.choice(words)
-  word_count = len(word.split())
-  print("Type the following word as fast as you can: ")
-  print(word)  
-  
-  time_limit = 60 # time
-  word_factor = word_count // 50
-  time_limit = time_limit + (60 * word_factor)
-  print(f"Time limit: {time_limit} seconds")
-  
-  start = time.time()
-  for i in range(time_limit, 0, -1):
-    print(f"Time remaining: {i} seconds", end='\r')
-    time.sleep(1)
-  print("Time's up! Please type your answer now:")
-  user_input = input()
-  end = time.time()
-  time_elapsed = start - end
-  if time_elapsed <= time_limit:
-    if user_input == word:
-      print("Correct! Time elapsed: " + str(time_elapsed) + " seconds")
-      wpm = word_count / (time_elapsed / 60)
-      print(f"Typing speed: {wpm:.2f} words per minute")
-    else:
-      print("Incorrect. The word was: " + word)
-      accuracy = len(set(user_input).intersection(word)) / len(word)
-      print(f"Accuracy: {accuracy:.2f}")
-  else:
-    print("Time is up! You lost.")
-    print("The word was: " + word)
+
+        ]
+ 
+        # Create the GUI elements
+        self.sentence_label = tk.Label(self.master,
+                                       text="Type the sentence below:",
+                                       font=("Helvetica", 12))
+        self.sentence_text = tk.Label(self.master,
+                                      text="",
+                                      font=("Helvetica", 14, "bold"),
+                                      fg="blue",
+                                      wraplength=450)
+        self.user_input_label = tk.Label(self.master,
+                                         text="Your input:",
+                                         font=("Helvetica", 12))
+        self.user_input_text = tk.Entry(self.master,
+                                        font=("Helvetica", 14),
+                                        width=30)
+        self.prompt_label = tk.Label(self.master,
+                                     text="Click the Start button to begin the test.",
+                                     font=("Helvetica", 12),
+                                     fg="black")
+        self.start_button = tk.Button(self.master,
+                                      text="Start Test",
+                                      font=("Helvetica", 12),
+                                      command=self.start_test,
+                                      bg="green",
+                                      fg="white")
+        self.submit_button = tk.Button(self.master,
+                                        text="Submit",
+                                        font=("Helvetica", 12),
+                                        command=self.end_test,
+                                        bg="blue",
+                                        fg="white",
+                                        state="disabled")
+        # Configure the GUI elements
+        self.sentence_label.pack(pady=(10,0))
+        self.sentence_text.pack(pady=(0,20))
+        self.user_input_label.pack()
+        self.user_input_text.pack(pady=(0,20))
+        self.prompt_label.pack()
+        self.start_button.pack(pady=(0,10))
+        self.submit_button.pack(pady=(0,10))
+        
+    def start_test(self):
+        self.test_sentence = random.choice(self.text_options)
+        self.sentence_text.configure(text=self.test_sentence)
+        self.prompt_label.configure(
+            text="Type the sentence as fast and as accurately as possible.",
+            fg="blue")
+        self.start_button.configure(state="disabled", bg="grey")
+        self.submit_button.configure(state="normal")
+        self.user_input_text.configure(state="normal")
+        self.user_input_text.delete(0, "end")
+        self.user_input_text.focus()
+        self.master.bind("<Return>", self.end_test)
+        self.start_time = time.time()
+        
+        
+    def end_test(self):
+        self.user_input = self.user_input_text.get()
+        end_time = time.time()
+        time_taken = end_time - self.start_time
+        words_typed = len(self.user_input.split())
+        accuracy = self.calculate_accuracy(self.user_input, self.test_sentence)
+        result_text = f"You typed {words_typed} words in {time_taken:.2f} seconds.\nYour accuracy was {accuracy:.2f}%."
+        self.prompt_label.configure(text=result_text, fg="green")
+        self.start_button.configure(state="normal", bg="green")
+        self.submit_button.configure(state="disabled")
+        self.user_input_text.configure(state="disabled")
+        self.master.unbind("<Return>")
+        self.user_input = ""
+
+    def calculate_accuracy(self, user_input, test_sentence):
+        user_words = user_input.split()
+        test_words = test_sentence.split()
+        correct_words = [uw for uw, tw in zip(user_words, test_words) if uw == tw]
+        accuracy = (len(correct_words) / len(test_words)) * 100
+        return accuracy
 
 
-while True:
-  typing_game()
-  play_again = input("Do you want to play again? (yes/no)")
-  if play_again.lower() == 'no':
-    break
-print("Thank you for playing!")
-
+root = tk.Tk()
+typing_test = TypingTest(root)
+root.mainloop()
