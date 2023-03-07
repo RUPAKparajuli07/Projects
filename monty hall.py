@@ -66,7 +66,7 @@ else:
     for i in range(5):
         window.bgcolor("red")
         window.update()
-        window.bgcolor("white")
+        window.bgcolor("red")
         window.update()
     window.tracer(1)
 
