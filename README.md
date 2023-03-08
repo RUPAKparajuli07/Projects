@@ -68,5 +68,4 @@
  <img src="https://profile-counter.glitch.me/RUPAKparajuli07/count.svg" />
  </centre>
 <hr>
-![github graph](https://github-readme-activity-graph.cyclic.app/graph?username=RUPAKparajuli07&theme=react-dark)
 
