@@ -2,14 +2,16 @@
 from tkinter import *
 import numpy as np
 
-size_of_board = 600
+size_of_board = 700
 symbol_size = (size_of_board / 3 - size_of_board / 8) / 2
-symbol_thickness = 50
-symbol_X_color = '#EE4035'
-symbol_O_color = '#0492CF'
-Green_color = '#7BC043'
+symbol_thickness = 30
+symbol_X_color = '#800000'
+symbol_O_color = '#006080'
+Text_color = '#FFCC66'
+# self.window.attributes('-fullscreen', True)
+# self.window.bind('<Escape>', self.toggle_fullscreen)
 
-
+      
 class Tic_Tac_Toe():
     # ------------------------------------------------------------------
     # Initialization Functions:
@@ -36,6 +38,10 @@ class Tic_Tac_Toe():
         self.X_score = 0
         self.O_score = 0
         self.tie_score = 0
+        
+        #  # Set window to full screen mode
+        # self.window.attributes('-fullscreen', True)
+        # self.window.bind('<Escape>', self.toggle_fullscreen)
 
     def mainloop(self):
         self.window.mainloop()
@@ -92,16 +98,16 @@ class Tic_Tac_Toe():
             color = 'gray'
 
         self.canvas.delete("all")
-        self.canvas.create_text(size_of_board / 2, size_of_board / 3, font="cmr 60 bold", fill=color, text=text)
+        self.canvas.create_text(size_of_board / 2, size_of_board / 3, font="cmr 30 bold", fill=color, text=text)
 
         score_text = 'Scores \n'
-        self.canvas.create_text(size_of_board / 2, 5 * size_of_board / 8, font="cmr 40 bold", fill=Green_color,
+        self.canvas.create_text(size_of_board / 2, 5 * size_of_board / 8, font="cmr 40 bold", fill=Text_color,
                                 text=score_text)
 
         score_text = 'Player 1 (X) : ' + str(self.X_score) + '\n'
         score_text += 'Player 2 (O): ' + str(self.O_score) + '\n'
         score_text += 'Tie                    : ' + str(self.tie_score)
-        self.canvas.create_text(size_of_board / 2, 3 * size_of_board / 4, font="cmr 30 bold", fill=Green_color,
+        self.canvas.create_text(size_of_board / 2, 3 * size_of_board / 4, font="cmr 30 bold", fill=Text_color,
                                 text=score_text)
         self.reset_board = True
 
@@ -205,7 +211,5 @@ class Tic_Tac_Toe():
             self.canvas.delete("all")
             self.play_again()
             self.reset_board = False
-
-
 game_instance = Tic_Tac_Toe()
 game_instance.mainloop()
