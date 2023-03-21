@@ -4,9 +4,10 @@ from turtle import *
 from freegames import path
 
 car = path('car.gif')
-tiles = list(range(4)) * 2
+tiles = list(range(32)) * 2
 state = {'mark': None}
-hide = [True] * 16
+hide = [True] * 64
+tap_count = 0  # initialize tap count to zero
 
 
 def square(x, y):
@@ -24,16 +25,18 @@ def square(x, y):
 
 def index(x, y):
     """Convert (x, y) coordinates to tiles index."""
-    return int((x + 100) // 50 + ((y + 100) // 50) * 4)
+    return int((x + 200) // 50 + ((y + 200) // 50) * 8)
 
 
 def xy(count):
     """Convert tiles count to (x, y) coordinates."""
-    return (count % 4) * 50 - 100, (count // 4) * 50 - 100
+    return (count % 8) * 50 - 200, (count // 8) * 50 - 200
 
 
 def tap(x, y):
     """Update mark and hidden tiles based on tap."""
+    global tap_count  # reference the global tap_count variable
+    tap_count += 1  # increment the tap count
     spot = index(x, y)
     mark = state['mark']
 
@@ -52,7 +55,7 @@ def draw():
     shape(car)
     stamp()
 
-    for count in range(16):
+    for count in range(64):
         if hide[count]:
             x, y = xy(count)
             square(x, y)
@@ -71,10 +74,12 @@ def draw():
 
 
 shuffle(tiles)
-setup(320, 320, 370, 0)
+setup(420, 420, 370, 0)
 addshape(car)
 hideturtle()
 tracer(False)
 onscreenclick(tap)
 draw()
 done()
+
+print("Total taps:", tap_count)  # print the total taps after the game ends
