@@ -26,7 +26,7 @@ def save_file():
     with open(filepath, "w") as output_file:
         text = txt_edit.get(1.0, tk.END)
         output_file.write(text)
-    window.title(f"Nptpad - {filepath}")
+    window.title(f"Notpad - {filepath}")
 
 window = tk.Tk()
 window.title("")
@@ -79,3 +79,4 @@ green_btn.grid(row=6, column=0, sticky="ew", padx=5, pady=5)
 highlight_btn.grid(row=7, column=0, sticky="ew", padx=5, pady=5)
 
 window.mainloop()
+ 
