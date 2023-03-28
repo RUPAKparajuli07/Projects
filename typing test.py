@@ -116,3 +116,4 @@ class TypingTest:
 root = tk.Tk()
 typing_test = TypingTest(root)
 root.mainloop()
+
