@@ -90,7 +90,7 @@ class TypingTest:
         self.master.bind("<Return>", self.end_test)
         self.start_time = time.time()
         
-        
+       
     def end_test(self):
         self.user_input = self.user_input_text.get()
         end_time = time.time()
