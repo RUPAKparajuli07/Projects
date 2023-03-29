@@ -83,6 +83,5 @@ results_text.pack()
 
 # Set the focus to the input text box
 input_text.focus_set()
-
 # Run the main loop
 root.mainloop()
