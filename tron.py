@@ -73,7 +73,6 @@ onkey(lambda: p1aim.rotate(-90), 'd')
 onkey(lambda: p2aim.rotate(90), 'j')
 onkey(lambda: p2aim.rotate(-90), 'l')
 
-
 # Start the game
 draw()
 done()
