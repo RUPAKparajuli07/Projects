@@ -3,7 +3,6 @@
 # Initialize the board
 board = [" " for i in range(9)]
 
-
 def print_board():
   row1 = "|".join(board[0:3])
   row2 = "|".join(board[3:6])
