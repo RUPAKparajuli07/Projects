@@ -93,7 +93,7 @@ def start_chat():
     else:
         print(Fore.RED + "Bot: I'm sorry, I don't understand. Can you please ask a different question?" + Style.RESET_ALL)
 
-
 # start chat
 if __name__ == '__main__':
     start_chat()
+    
