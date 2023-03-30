@@ -55,3 +55,4 @@ weather_label = tk.Label(output_frame, font=('Calibri', 16), bg='#434343')
 weather_label.pack(pady=5)
 
 root.mainloop()
+
