@@ -1,5 +1,4 @@
 import random
-
 # List of cars participating in the race
 cars = ["BMW", "Audi", "Mercedes", "Porsche", "Ferrari"]
 
