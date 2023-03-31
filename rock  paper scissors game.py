@@ -86,7 +86,6 @@ def play_game():
     result.goto(0, -150)
     result.write(f'{winner.title()} win!', align='center', font=('Arial', 24, 'bold'))
     result.color(result_color)
-
     # prompt the user to play again
     play_again = turtle.textinput('Rock Paper Scissors', 'Do you want to play again? (Y/N)').lower()
     if play_again == 'y':
