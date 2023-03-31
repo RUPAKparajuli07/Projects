@@ -16,9 +16,6 @@ correct_ans =["a", "c", "b", "c"]
 
 if ans.lower() == "yes":
    
-   
-   
-   
     print(a)    
     print("Question- What is the best Programming Language? ")
     give_options("Python", "C", "Java" )
