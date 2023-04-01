@@ -66,7 +66,7 @@ if ans.lower() == "yes":
         
         
         
-        
+   
 
 i = score*10
 
