@@ -149,7 +149,6 @@ for i in range(1000):
     print("******************************************************************")
 
 
-
     if i == len(quotes):
         print("This is not your type.")
         break
