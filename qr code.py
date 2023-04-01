@@ -20,7 +20,6 @@ img_qr = img_qr.resize((size, size))
 # img_center = Image.open('/R/qr/QR.png')    OR
 img_center = Image.open('myQR1.png')
 
-
 img_center = img_center.resize((int(size*0.25), int(size*0.25)))
 
 # Create a new image to combine the QR code and the center image
