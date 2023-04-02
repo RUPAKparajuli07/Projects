@@ -72,4 +72,3 @@ else:
 
 # Wait for the user to close the window
 window.mainloop()
-
