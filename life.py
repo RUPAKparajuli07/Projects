@@ -48,7 +48,6 @@ def draw():
     update()
     ontimer(draw, 100)
 
-
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
