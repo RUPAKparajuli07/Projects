@@ -15,7 +15,6 @@ CREATE TABLE IF NOT EXISTS books (
 )
 ''')
 conn.commit()
-
 # this code is used to add a new book
 def add_book(title, author, price):
     cursor.execute('''
