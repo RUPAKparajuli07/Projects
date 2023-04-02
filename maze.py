@@ -31,7 +31,6 @@ def tap(x, y):
     goto(x, y)
     dot(4)
 
-
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
