@@ -82,4 +82,6 @@ onscreenclick(tap)
 draw()
 done()
 
+  # print the total taps after the game ends
+
 print("Total taps:", tap_count)  # print the total taps after the game ends
