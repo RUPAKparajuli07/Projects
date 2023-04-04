@@ -10,7 +10,6 @@ for i in range(400):
     squary.left(91)
 
 
-
 # import turtle as tur
 # import colorsys as cs
 # tur.setup(800,800)
