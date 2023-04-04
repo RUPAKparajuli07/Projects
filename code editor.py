@@ -67,3 +67,4 @@ run_menu.add_command(label="Run", command=run_code)
 text_editor.tag_configure("error", background="red")
 
 root.mainloop()
+
