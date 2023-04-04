@@ -41,7 +41,6 @@ def tap(x, y):
     rows[row] = count + 1
     state['player'] = turns[player]
 
-
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
