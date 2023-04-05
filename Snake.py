@@ -116,4 +116,3 @@ def game_loop():
         pygame.display.update()
         CLOCK.tick(SNAKE_SPEED)
 game_loop()
-
