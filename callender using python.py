@@ -14,6 +14,7 @@ def showCalendar():
     calYear = Label(gui, text= gui_content, font= "Consolas 10 bold", justify=LEFT)
     calYear.pack(pady=10, padx=10, fill=BOTH, expand=True)
     gui.mainloop()
+    
 
 # Driver code
 if __name__=='__main__':
