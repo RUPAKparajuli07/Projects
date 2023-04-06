@@ -22,6 +22,7 @@ CHOICES = {
     }
 }
 
+
 # Initialize the player and computer scores
 PLAYER_SCORE = 0
 COMPUTER_SCORE = 0
