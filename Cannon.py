@@ -9,6 +9,7 @@ score = 0
 high_score = 0
 game_over = False
 
+
 def tap(x, y):
     """Respond to screen tap."""
     global speed, game_over
