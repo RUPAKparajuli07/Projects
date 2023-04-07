@@ -32,6 +32,7 @@ class FirstLetterCapitalizer:
             master.rowconfigure(i, weight=0)
             master.columnconfigure(i, weight=1)
 
+            
     def process_input(self):
         input_string = self.entry.get()
 
