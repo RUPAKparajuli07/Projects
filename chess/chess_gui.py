@@ -1,10 +1,3 @@
-#
-# The GUI engine for Python Chess
-#
-# Author: Boo Sung Kim, Eddie Sharick
-# Note: The pygame tutorial by Eddie Sharick was used for the GUI engine. The GUI code was altered by Boo Sung Kim to
-# fit in with the rest of the project.
-#
 import chess_engine
 import pygame as py
 
