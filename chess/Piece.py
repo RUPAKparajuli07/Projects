@@ -1,8 +1,3 @@
-#
-# The Chess piece classes
-#
-# TODO: add checking if check after moving suggested move later
-
 # General chess piece
 from enums import Player
 
