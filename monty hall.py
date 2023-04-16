@@ -1,6 +1,5 @@
 import random
 import turtle
-
 # Create a Turtle graphics window
 window = turtle.Screen()
 window.title("Monty Hall Simulator")
