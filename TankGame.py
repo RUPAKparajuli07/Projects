@@ -1,6 +1,7 @@
 import pygame
 import random
 
+
 pygame.init()
 
 display_width = 800
