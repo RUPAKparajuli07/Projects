@@ -15,7 +15,6 @@ def showCalendar():
     calYear.pack(pady=10, padx=10, fill=BOTH, expand=True)
     gui.mainloop()
     
-
 # Driver code
 if __name__=='__main__':
     new = Tk()
