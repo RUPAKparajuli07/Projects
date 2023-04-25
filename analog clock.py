@@ -1,7 +1,7 @@
 import tkinter as tk
 import math
 import time
-
+ 
 class AnalogClock:
     def __init__(self):
         self.window = tk.Tk()
