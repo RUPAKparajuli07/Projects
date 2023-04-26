@@ -7,6 +7,7 @@ import pyjokes
 import os
 import time
 
+
 def sptext ():
     reconizer=sr.Recognizer()
     with sr.Microphone() as source:
