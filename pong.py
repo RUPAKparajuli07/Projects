@@ -1,5 +1,5 @@
 import pygame
-import random
+import random 
 
 # initialize Pygame
 pygame.init()
