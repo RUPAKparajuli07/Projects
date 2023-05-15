@@ -3,7 +3,6 @@ import tkinter as tk
 from tkinter import messagebox
 import pygame
 
-
 # Initialize Pygame mixer for sound effects
 pygame.mixer.init()
 
