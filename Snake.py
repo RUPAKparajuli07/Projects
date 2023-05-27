@@ -10,7 +10,7 @@ pygame.display.set_caption('Snake Game')
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
- 
+  
 # Define the font
 FONT = pygame.font.SysFont(None, 30)
 
