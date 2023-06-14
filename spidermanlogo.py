@@ -6,6 +6,7 @@ t=turtle.Turtle()
 scr=turtle.Screen()
 scr.bgcolor("red")
 
+
 #draw the head
 t.goto(0,0)
 t.begin_fill()
