@@ -13,7 +13,6 @@ shopping1 = shopping
 temp = []
 order = ""
 
-
 def adminLoginWindow():
     print("=====================")
     print("1.Display Menu")
