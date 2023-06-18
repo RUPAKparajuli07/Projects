@@ -1,7 +1,6 @@
 # import necessary libraries
 from nltk.chat.util import Chat, reflections
 from colorama import Fore, Style
-
 # define chat pairs
 Questions = [
     [
