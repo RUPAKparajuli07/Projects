@@ -64,8 +64,8 @@
 <br>
 <br>
 <hr>
-<centre>
- <img src="https://profile-counter.glitch.me/RUPAKparajuli07/count.svg" />
- </centre>
+<center>
+    <img src="https://profile-counter.glitch.me/RUPAKparajuli07/count.svg" />
+</center>
 <hr>
 
