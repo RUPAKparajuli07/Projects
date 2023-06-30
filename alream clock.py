@@ -1,7 +1,6 @@
 import datetime
 import pytz
 from playsound import playsound
-
 tz = pytz.timezone('Asia/Kathmandu')
 now = datetime.datetime.now(tz)
 offset = now.strftime('%z')
