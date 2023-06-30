@@ -14,7 +14,6 @@ def print_board():
   print("-" * 5)
   print(row3)
 
-
 # Function to check if the game is a draw
 def check_draw():
   return not " " in board
