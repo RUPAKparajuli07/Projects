@@ -3,7 +3,6 @@ import random
 from pytube import YouTube
 from tkinter import filedialog
 
-
 colors = ['#F44336', '#E91E63', '#9C27B0', '#673AB7', '#3F51B5', '#2196F3', '#00BCD4', '#009688', '#4CAF50', '#FFC107', '#FF9800', '#795548']
 
 def change_background():
