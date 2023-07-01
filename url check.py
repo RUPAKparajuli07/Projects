@@ -1,8 +1,6 @@
 import tkinter as tk
 import requests
 import tldextract
-
-
 def is_link_safe(url):
     try:
         # Extract the domain name from the URL
