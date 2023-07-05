@@ -1,6 +1,6 @@
 import sqlite3
-# this code is used to connect DB 
 
+# this code is used to connect DB 
 conn = sqlite3.connect('bookstore.db')
 cursor = conn.cursor()
 
