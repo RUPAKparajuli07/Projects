@@ -12,9 +12,7 @@ def pause():
     my_turtle_cursor.speed(2)
     for i in range(100):
         my_turtle_cursor.left(90)
-
-
-
+        
 def draw_upper_dot_of_python_logo():
     my_turtle_cursor.penup()
     my_turtle_cursor.right(90)
