@@ -64,6 +64,16 @@
 <br>
 <br>
 <hr>
+
+## Github Status 🏆
+
+<img  src="https://github-readme-stats.vercel.app/api?username=RUPAKparajuli07&show_icons=true&theme=gradient" width="48%" align="right" >
+<img  src="https://github-readme-streak-stats.herokuapp.com/?user=RUPAKparajuli07&theme=gradient" width="48%" >
+<br>
+
+![github graph](https://github-readme-activity-graph.vercel.app/graph?username=RUPAKparajuli07&theme=react)
+<br>
+
 <center>
     <img src="https://profile-counter.glitch.me/RUPAKparajuli07/count.svg" />
 </center>
