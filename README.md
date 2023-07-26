@@ -74,8 +74,8 @@
 ![github graph](https://github-readme-activity-graph.vercel.app/graph?username=RUPAKparajuli07&theme=react)
 <br>
 
-<center>
-    <img src="https://profile-counter.glitch.me/RUPAKparajuli07/count.svg" />
-</center>
-<hr>
+<p align="center"> 
+  Visitor count<br>
+  <img src="https://profile-counter.glitch.me/RUPAKparajuli07/count.svg" />
+</p>
 
